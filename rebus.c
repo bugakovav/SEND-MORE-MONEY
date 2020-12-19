@@ -25,6 +25,8 @@ short vec_result[10];
 bool used[10];
 int numbers[10] = { 0 };
 
+int result = 0;
+
 void brec(int pos) {
 
     if (pos == count_let) {
@@ -46,8 +48,6 @@ void brec(int pos) {
             }
         }
 
-        int result = 0;
-
         for(int i = 0; i <= count_words - 1; i++) {
             result += numbers[i];
         }
@@ -60,9 +60,9 @@ void brec(int pos) {
            exit(0);
         }
 
-        for(int i = 0; i < 10; i++) {
-            numbers[i] = 0;
-        }        
+        memset(&result, 0, 4);
+
+        memset(numbers, 0, 40);
 
         return;
     }
