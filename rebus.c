@@ -26,6 +26,7 @@ bool used[10];
 int numbers[10] = { 0 };
 
 int result = 0;
+int lens[10];
 
 void brec(int pos) {
 
@@ -33,7 +34,7 @@ void brec(int pos) {
         
         for(int i = 0; i <= count_words; i++) {
 
-            for(int j = 0; j < strlen(words[i]); j++) {
+            for(int j = 0; j < lens[i]; j++) {
 
                 for(int q = 0; q < count_let; q++) {
 
@@ -111,7 +112,9 @@ void read_msg() {
 
     int len_word = 0;
 
-    for(int i = 0; i < strlen(msg); i++) {
+    int len_msg = strlen(msg);
+
+    for(int i = 0; i < len_msg; i++) {
 
         if(isalpha(msg[i])) {
             words[count_words][len_word] = msg[i];
@@ -119,12 +122,12 @@ void read_msg() {
             len_word++;
         }
         else if (msg[i] == '+') {
-            words[count_words][len_word] = '\0';
+            lens[count_words] = len_word;
             count_words++;
             len_word = 0;
         }
         else if (msg[i] == '=') {
-            words[count_words][len_word] = '\0';
+            lens[count_words] = len_word;
             count_words++;
             len_word = 0;
             index_result = i + 1;
