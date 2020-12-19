@@ -1,0 +1,50 @@
+SEND+MORE=MONEY
+Task:
+          SEND
+        + MORE
+          MONEY
+Solution:
+          9567
+        + 1085
+          10652
+Time:
+        0.343750 sec
+BE+BE=MOO
+Task:
+          BE
+        + BE
+          MOO
+Solution:
+          72
+        + 72
+          144
+Time:
+        0.000000 sec
+BIG+CAT=LION
+Task:
+          BIG
+        + CAT
+          LION
+Solution:
+          426
+        + 809
+          1235
+Time:
+        0.015625 sec
+ELEVEN+NINE+FIVE+FIVE=THIRTY
+Task:
+          ELEVEN
+          NINE
+        + FIVE
+          -----
+          FIVE
+          THIRTY
+Solution:
+          797275
+          5057
+        + 4027
+          -----
+          4027
+          810386
+Time:
+        1.484375 sec       
