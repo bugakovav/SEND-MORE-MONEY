@@ -37,7 +37,7 @@ void brec(int pos) {
 
                     if(words[i][j] == alphabet[q]) {
                         if(vec_result[q] == 0 and j == 0)
-                            numbers[i] = numbers[i] * 10 + 10;
+                            numbers[i] = 10;
                         else
                             numbers[i] = numbers[i] * 10 + vec_result[q];
                     }
