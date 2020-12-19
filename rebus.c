@@ -54,9 +54,15 @@ void brec(int pos) {
         }
 
         if(result == numbers[count_words]) {
-           print_result();
+           //print_result();
 
            printf("Time:\n\t%f sec\n", (clock() - start) / CLOCKS_PER_SEC);
+
+           for(int i = 0; i < count_words; i++) {
+            printf("+%d", numbers[i]);
+           }
+
+           printf("=%d", numbers[count_words]);
 
            exit(0);
         }
@@ -93,13 +99,13 @@ int main() {
 
     start = clock();
 
-    print_table();
+    //print_table();
 
     make_alphabet();
 
     brec(0);
 
-    printf("No solutions\n");
+    //printf("No solutions\n");
 
     printf("Time:\n\t%f sec\n", (clock() - start) / CLOCKS_PER_SEC);
 
