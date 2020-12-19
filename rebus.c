@@ -122,7 +122,7 @@ void read_msg() {
 
     for(int i = 0; i < len_msg; i++) {
 
-        if(isalpha(msg[i])) {
+        if(msg[i] > 64 and msg[i] < 91) {
             words[count_words][len_word] = msg[i];
             stats[msg[i]]++;
             len_word++;
