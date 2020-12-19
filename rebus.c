@@ -142,9 +142,6 @@ void read_msg() {
 
     words[count_words][len_word] = '\0';
 
-    assert(count_words <= 7 and count_words != 0);
-
-    assert(index_result != 0);
 }
 
 void print_table() {
@@ -170,7 +167,6 @@ void make_alphabet() {
         }
     }
 
-    assert(count_let <= 10);
 }
 
 void print_result() {
